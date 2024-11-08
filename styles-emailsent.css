@@ -1,0 +1,80 @@
+@media (min-width: 400px) { 
+    .img-logo {
+        display: none;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 5px;
+    top: 60px;
+}
+
+.section > p{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.title {
+    color: var(--black);
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: medium;
+}
+
+.img-logo {
+    padding-bottom: 50px;
+    width: 200px;
+}
+
+.img-correo{
+    border-radius: 100%;
+    padding: 40px;
+    background-color: var(--text-input-field);
+    margin: 10px;
+}
+
+.button {
+    background-color: var(--hospital-green);
+    -webkit-text-fill-color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    
+}
+a {
+    color: var(--hospital-green);
+    font-weight: bold;
+}
