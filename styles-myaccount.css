@@ -1,0 +1,89 @@
+@media (min-width: 400px) { 
+    img {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container{
+        height: 100%;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    }
+
+.title {
+        color: var(--black); 
+        font-size: larger;
+        font-weight: bold;
+        margin: 2px;
+}
+
+.text {
+    color: var(--black);
+    font-size: small;
+    font-weight: bold;
+    
+}
+
+.text-1 {
+    color: gainsboro;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+.button {
+    background-color: var(--white);
+    color: var(--hospital-green);
+    border-radius: 5px;
+    border-color: var(--hospital-green);
+    border: 1px;
+    border-style: solid;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+    
+}
