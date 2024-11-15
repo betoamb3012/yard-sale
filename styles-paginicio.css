@@ -1,0 +1,96 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+}
+
+
+.container {
+    width: 100%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    place-content: center;
+}
+
+.card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.card-info-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info-container figure img {
+    width: 35px;
+    height: 35px;
+}
+
+.info > p {
+    margin: 0px;
+}
+
+.info p:nth-child(1){
+    font-size: medium;
+    font-weight: bold;
+}
+
+.info p:nth-child(2){
+    font-size: small;
+    color: var(--very-light-pink);
+}
+
+figure{
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+@media(max-width:640px){
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+        gap: 20px;
+        place-content: center;
+    }
+    
+    .card {
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card img {
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+    }
+}
+
