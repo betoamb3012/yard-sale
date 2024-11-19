@@ -1,0 +1,61 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+}
+
+.desktop-menu {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px;
+}
+
+.desktop-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-menu ul li {
+    width: 100%;
+    text-align: end;
+    display: inline-block;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.desktop-menu ul li:last-child {
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-weight: bold;
+    font-size: small;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.desktop-menu ul li:nth-child(1) a , .desktop-menu ul li:nth-child(2) a {
+    color: var(--black);
+    font-weight: bold;
+    font-size: small;
+    text-decoration: none;
+}
+
+
+
