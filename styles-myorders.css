@@ -1,0 +1,81 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #ACD9B2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: large;
+    font-weight: bold;
+    color: var(--black);
+    align-content: start;
+}
+
+.myorder-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.mycard-container-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.mycard-container-info .card-content-left {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mycard-container-info .card-content-left span:nth-child(2) {
+    font-size: medium;
+    color: gray;
+}
+.mycard-container-info .card-content-left span:nth-child(1) {
+    font-weight: bold;
+    font-size: medium;
+    color: var(--black);
+}
+
+.mycard-container-info .card-content-right {
+    display: flex;
+    font-weight: bold;
+    font-size: medium;
+    color: var(--black);
+    padding: 20px;
+    align-content: center;
+}
+
+.mycard-container-info .card-content-right figure {
+    padding-left: 20px;
+    margin: 0px;
+    align-content: center;
+}
+
+.mycard-container-info .card-content-right span {
+    align-content: center;
+}
